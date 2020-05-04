@@ -1,6 +1,7 @@
 import axios from "axios";
+import {API_URL} from "./environments";
 
-const baseUrl = "";
+let baseUrl = API_URL;
 
 const interceptor = () => {
 
