@@ -1,15 +1,35 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
-import Routing from "./routing";
+import { Auth, Root } from "./routing";
+import {connect} from "react-redux";
 
-function App() {
-    return (
-        <div>
-          <BrowserRouter>
-            <Routing />
-          </BrowserRouter>
-        </div>
-    );
+class App extends React.Component {
+
+    renderRoutingWithUserLoggedIn = (userLoggedIn) => {
+        switch (userLoggedIn) {
+            case true :
+                return <Root/>;
+            default :
+                return <Auth/>
+        }
+    };
+
+    render() {
+        const {userLoggedIn} = this.props;
+        return (
+            <div className="app-root">
+                <BrowserRouter>
+                    {this.renderRoutingWithUserLoggedIn(userLoggedIn)}
+                </BrowserRouter>
+            </div>
+        );
+    }
 }
 
-export default App;
+const mapStateToProps = ({}) => {
+    return {
+        userLoggedIn: true,
+    }
+};
+const mapDispatchToProps = {};
+export default connect(mapStateToProps, mapDispatchToProps)(App);

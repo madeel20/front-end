@@ -1,22 +1,27 @@
 import React, {Fragment} from 'react'
 import {Route, Switch} from 'react-router-dom';
 import {
-    //auth pages
-    Login,
-    SignUp,
-    // normal pages
-    Home,
-    About
+    Dashboard
 } from '../pages';
 
-function Routing() {
+function Auth() {
     return (
         <Fragment>
             <Switch>
-                <Route exact path="/login" component={Login}/>
-                <Route exact path="/sign-up" component={SignUp}/>
-                <Route exact path="/" component={Home}/>
-                <Route path="/about" component={About}/>
+                <Route path="*" render={() => (
+                    <div>
+                        <h1>Not Found</h1>
+                    </div>
+                )}/>
+            </Switch>
+        </Fragment>
+    )
+}
+function Root() {
+    return (
+        <Fragment>
+            <Switch>
+                <Route exact path="/" component={Dashboard}/>
                 <Route path="*" render={() => (
                     <div>
                         <h1>Not Found</h1>
@@ -27,4 +32,7 @@ function Routing() {
     )
 }
 
-export default Routing;
+export {
+    Auth,
+    Root
+};
