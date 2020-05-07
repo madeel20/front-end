@@ -1,12 +1,12 @@
 import React from 'react';
 import {CNav} from "../../uiComponents";
 
-function Dashboard() {
+function LessonPlan() {
     return (
-        <div className="dashboard">
+        <div className="lesson-plan">
             <CNav />
-            <p>Dashboard</p>
+            <p>LessonPlan</p>
         </div>
     );
 }
-export default Dashboard;
+export default LessonPlan;

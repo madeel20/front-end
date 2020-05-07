@@ -1,9 +1,34 @@
-@include font-face('Montserrat-Black', 'Montserrat-Black');
-@include font-face('Montserrat-Bold', 'Montserrat-Bold');
-@include font-face('Montserrat-ExtraBold', 'Montserrat-ExtraBold');
-@include font-face('Montserrat-Italic', 'Montserrat-Italic');
-@include font-face('Montserrat-Light', 'Montserrat-Light');
-@include font-face('Montserrat-Medium', 'Montserrat-Medium');
-@include font-face('Montserrat-Regular', 'Montserrat-Regular');
-@include font-face('Montserrat-Thin', 'Montserrat-Thin');
-@include font-face('Montserrat-SemiBold', 'Montserrat-SemiBold');
+//@include font-face('Montserrat-Black', 'Montserrat-Black');
+//@include font-face('Montserrat-Bold', 'Montserrat-Bold');
+//@include font-face('Montserrat-ExtraBold', 'Montserrat-ExtraBold');
+//@include font-face('Montserrat-Italic', 'Montserrat-Italic');
+//@include font-face('Montserrat-Light', 'Montserrat-Light');
+//@include font-face('Montserrat-Medium', 'Montserrat-Medium');
+//@include font-face('Montserrat-Regular', 'Montserrat-Regular');
+//@include font-face('Montserrat-Thin', 'Montserrat-Thin');
+//@include font-face('Montserrat-SemiBold', 'Montserrat-SemiBold');
+
+@include font-face('HKGrotesk-Bold', 'HKGrotesk-Bold', '.otf');
+//@include font-face('HKGrotesk-BoldItalic', 'HKGrotesk-BoldItalic');
+//@include font-face('HKGrotesk-BoldLegacy', 'HKGrotesk-BoldLegacy');
+
+@include font-face('HKGrotesk-Italic', 'HKGrotesk-Italic', '.otf');
+//@include font-face('HKGrotesk-LegacyItalic', 'HKGrotesk-LegacyItalic');
+//@include font-face('HKGrotesk-BoldLegacyItalic', 'HKGrotesk-BoldLegacyItalic');
+
+@include font-face('HKGrotesk-Light', 'HKGrotesk-Light', '.otf');
+//@include font-face('HKGrotesk-LightItalic', 'HKGrotesk-LightItalic');
+//@include font-face('HKGrotesk-LightLegacyItalic', 'HKGrotesk-LightLegacyItalic');
+
+@include font-face('HKGrotesk-Medium', 'HKGrotesk-Medium', '.otf');
+//@include font-face('HKGrotesk-MediumItalic', 'HKGrotesk-MediumItalic');
+//@include font-face('HKGrotesk-MediumLegacy', 'HKGrotesk-MediumLegacy');
+//@include font-face('HKGrotesk-MediumLegacyItalic', 'HKGrotesk-MediumLegacyItalic');
+
+@include font-face('HKGrotesk-Regular', 'HKGrotesk-Regular', '.otf');
+@include font-face('HKGrotesk-RegularLegacy', 'HKGrotesk-RegularLegacy', '.otf');
+
+@include font-face('HKGrotesk-SemiBold', 'HKGrotesk-SemiBold', '.otf');
+//@include font-face('HKGrotesk-SemiBoldItalic', 'HKGrotesk-SemiBoldItalic');
+//@include font-face('HKGrotesk-SemiBoldLegacy', 'HKGrotesk-SemiBoldLegacy');
+//@include font-face('HKGrotesk-SemiBoldLegacyItalic', 'HKGrotesk-SemiBoldLegacyItalic');

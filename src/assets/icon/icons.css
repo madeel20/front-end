@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?4hlk8d');
+  src:  url('icomoon.eot?4hlk8d#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?4hlk8d') format('truetype'),
+    url('icomoon.woff?4hlk8d') format('woff'),
+    url('icomoon.svg?4hlk8d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alaram:before {
+  content: "\e900";
+  color: #a1a8cb;
+}
+.icon-book:before {
+  content: "\e901";
+  color: #a1a8cb;
+}
+.icon-clock:before {
+  content: "\e902";
+  color: #a1a8cb;
+}
+.icon-dashboard:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-document:before {
+  content: "\e904";
+  color: #a1a8cb;
+}
+.icon-down-arrow:before {
+  content: "\e905";
+  color: #a1a8cb;
+}
+.icon-email .path1:before {
+  content: "\e906";
+  color: rgb(161, 168, 203);
+}
+.icon-email .path2:before {
+  content: "\e907";
+  margin-left: -1.357421875em;
+  color: rgb(22, 40, 132);
+}
+.icon-finance:before {
+  content: "\e908";
+  color: #a1a8cb;
+}
+.icon-gear .path1:before {
+  content: "\e909";
+  color: rgb(161, 168, 203);
+}
+.icon-gear .path2:before {
+  content: "\e90a";
+  margin-left: -0.9521484375em;
+  color: rgb(44, 65, 149);
+}
+.icon-homeworks:before {
+  content: "\e90b";
+  color: #a1a8cb;
+}
+.icon-lesson .path1:before {
+  content: "\e90c";
+  color: rgb(161, 168, 203);
+}
+.icon-lesson .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(22, 40, 132);
+}
+.icon-questions:before {
+  content: "\e90e";
+  color: #a1a8cb;
+}
+.icon-quizzes:before {
+  content: "\e90f";
+  color: #a1a8cb;
+}
+.icon-up-arrow:before {
+  content: "\e910";
+  color: #a1a8cb;
+}
+.icon-user:before {
+  content: "\e911";
+  color: #a1a8cb;
+}

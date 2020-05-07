@@ -9,21 +9,6 @@ const uuid = () => {
     return s4() + s4() + '-' + s4();
 };
 
-const getUserUid = async (type) => {
-    try {
-        let token = await localStorage.getItem('token');
-        let value = JSON.parse(token);
-        if(type === 'token'){
-            return `${value.token}`;
-        } else {
-            return `${value.uid}`;
-        }
-    } catch (error) {
-        return null
-    }
-};
-
 export {
-    uuid,
-    getUserUid
+    uuid
 }

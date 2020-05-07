@@ -1,3 +1,45 @@
-body {
+body, html {
   margin: 0;
+  height: 100%;
+}
+#root, .app-root{
+  height: 100%;
+}
+
+.body-with-side-menu {
+  .side-menu-container {
+    width: 230px;
+  }
+  .body-container {
+    padding: 25px 40px;
+    background-color: #F6F9FE;
+    flex: 1;
+  }
+}
+
+.scroll-y {
+  overflow-y: auto;
+  &::-webkit-scrollbar-thumb {
+    background-color: $wild-blue;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+.scroll-x {
+  overflow-x: auto;
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }

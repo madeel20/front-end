@@ -4,6 +4,8 @@ import App from './App';
 import {interceptor} from "./utils/intercepter";
 import {Provider} from "react-redux";
 //global add here
+import 'antd/dist/antd.css';
+import './assets/icon/icons.css';
 import './assets/scss/index.scss';
 import * as serviceWorker from './serviceWorker';
 import {store} from "./store";
