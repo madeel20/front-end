@@ -16,6 +16,10 @@ body, html {
     flex: 1;
   }
 }
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+}
 
 .scroll-y {
   overflow-y: auto;
@@ -30,7 +34,6 @@ body, html {
     background: transparent;
   }
 }
-
 .scroll-x {
   overflow-x: auto;
   &::-webkit-scrollbar-thumb {
@@ -42,4 +45,17 @@ body, html {
   &::-webkit-scrollbar-track {
     background: transparent;
   }
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 3;
 }

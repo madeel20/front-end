@@ -2,6 +2,8 @@ import React from 'react';
 import {Image} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 import {Dropdown, Menu} from "antd";
+import {useSelector} from "react-redux";
+import {logout} from "../../store/actions/Users";
 
 const routes = [
     {
@@ -96,9 +98,19 @@ function SideMenu() {
         }
         return null
     };
+    const user = useSelector(({users}) => users.user);
+
+
+    const renderUserName = () => {
+        if(user.details){
+            return `${user.details.firstName ? user.details.firstName : ''} ${user.details.lastName ? user.details.lastName : ''}`
+        }
+        return ''
+    }
+
     const menu = (
         <Menu>
-            <Menu.Item key="1">Logout</Menu.Item>
+            <Menu.Item onClick={() => logout()} key="1">Logout</Menu.Item>
         </Menu>
     );
 
@@ -110,15 +122,15 @@ function SideMenu() {
             <div className="menu scroll-y">
                 {renderMenu(routes)}
             </div>
-            <Dropdown overlay={menu} trigger={['click']}>
-            <div className="user d-flex flex-row">
-                <Image src={require('../../assets/images/user.jpg')} draggable={false}/>
-                <div className="user-info d-flex flex-column">
-                    <span>user</span>
-                    <span>Alex Tyshchenko</span>
+            {Object.keys(user).length ? <Dropdown overlay={menu} trigger={['click']}>
+                <div className="user d-flex flex-row">
+                    <Image src={require('../../assets/images/user.jpg')} draggable={false}/>
+                    <div className="user-info d-flex flex-column">
+                        <span>user</span>
+                        <span>{renderUserName()}</span>
+                    </div>
                 </div>
-            </div>
-            </Dropdown>
+            </Dropdown> : null}
         </div>
     );
 }
